@@ -11,7 +11,7 @@ EXEC = raytracer
 all: clean build
 
 build:
-	$(CXX) $(CXXFLAGS) $(SRC_FILES) -o $(BIN_DIR)/$(EXEC)
+	$(CXX) $(CXXFLAGS) $(SRC_FILES) $(OTHER_FILES) -o $(BIN_DIR)/$(EXEC)
 
 clean:
 	rm -rf $(BIN_DIR)/$(EXEC)
