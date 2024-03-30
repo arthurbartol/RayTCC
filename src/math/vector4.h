@@ -11,13 +11,16 @@ public:
     ~Vector4() = default;
 
     Vector4(double t);
-    Vector4(double x, double y, double z, double w = 1.0);
+    Vector4(double x, double y, double z, double w = 0.0);
 
     Vector4 operator+(const Vector4& other) const;
     Vector4 operator-(const Vector4& other) const;
     Vector4 operator*(const Vector4& other) const;
     Vector4 operator*(const double&  t)     const;
     Vector4 operator/(const double&  t)     const;
+
+    // Essential for testing purposes
+    bool operator==(const Vector4& other) const;
 
     friend Vector4 operator*(const double& t, const Vector4& v);
 

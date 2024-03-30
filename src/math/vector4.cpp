@@ -29,6 +29,13 @@ Vector4 Vector4::operator/(const double& t) const {
     return Vector4(x / t, y / t, z / t, w / t);
 }
 
+bool Vector4::operator==(const Vector4& other) const {
+    return x == other.x &&
+           y == other.y &&
+           z == other.z &&
+           w == other.w;
+}
+
 
 Vector4 operator*(const double& t, const Vector4& v) {
     return v * t;
