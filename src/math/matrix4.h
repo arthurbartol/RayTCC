@@ -15,4 +15,7 @@ public:
     Matrix4 operator-(const Matrix4& other) const;
     Matrix4 operator*(const Matrix4& other) const;
     Matrix4 operator*(const double&  t)     const;
+
+    // Essential for testing purposes
+    bool operator==(const Matrix4& other) const;
 };

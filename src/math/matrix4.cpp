@@ -31,3 +31,11 @@ Matrix4 Matrix4::operator*(const double& t) const {
                    data[2] * t,
                    data[3] * t);
 }
+
+
+bool Matrix4::operator==(const Matrix4& other) const {
+    return data[0] == other.data[0] &&
+           data[1] == other.data[1] &&
+           data[2] == other.data[2] &&
+           data[3] == other.data[3];
+}
