@@ -1,4 +1,4 @@
-CXX = clang++
+CXX = clang++-18
 CXCFLAGS = -Wall -Werror -Wextra -std=c++20
 
 BIN_DIR = bin
