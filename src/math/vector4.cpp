@@ -21,11 +21,11 @@ Vector4 Vector4::operator*(const Vector4& other) const {
     return Vector4(x * other.x, y * other.y, z * other.z, w * other.w);
 }
 
-Vector4 Vector4::operator*(const double& t) const {
+Vector4 Vector4::operator*(const double t) const {
     return Vector4(x * t, y * t, z * t, w * t);
 }
 
-Vector4 Vector4::operator/(const double& t) const {
+Vector4 Vector4::operator/(const double t) const {
     return Vector4(x / t, y / t, z / t, w / t);
 }
 
@@ -37,7 +37,7 @@ bool Vector4::operator==(const Vector4& other) const {
 }
 
 
-Vector4 operator*(const double& t, const Vector4& v) {
+Vector4 operator*(const double t, const Vector4& v) {
     return v * t;
 }
 

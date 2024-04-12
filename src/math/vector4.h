@@ -16,13 +16,13 @@ public:
     Vector4 operator+(const Vector4& other) const;
     Vector4 operator-(const Vector4& other) const;
     Vector4 operator*(const Vector4& other) const;
-    Vector4 operator*(const double&  t)     const;
-    Vector4 operator/(const double&  t)     const;
+    Vector4 operator*(const double   t)     const;
+    Vector4 operator/(const double   t)     const;
 
     // Essential for testing purposes
     bool operator==(const Vector4& other) const;
 
-    friend Vector4 operator*(const double& t, const Vector4& v);
+    friend Vector4 operator*(const double t, const Vector4& v);
 
     double length() const;
 };
